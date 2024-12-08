@@ -15,6 +15,10 @@ namespace WebApiDemo
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddScoped<CityRepository>();
+            builder.Services.AddScoped<TalukaRepository>();
+            builder.Services.AddScoped<DistrictRepository>();
+            builder.Services.AddScoped<StateRepository>();
+            builder.Services.AddScoped<CountryRepository>();
 
             builder.Services.AddSwaggerGen();
 

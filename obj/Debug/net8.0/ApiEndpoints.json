@@ -77,5 +77,45 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.CountryController",
+    "Method": "GetAllCountries",
+    "RelativePath": "api/Country",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.DistrictController",
+    "Method": "GetAllDistricts",
+    "RelativePath": "api/District",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.StateController",
+    "Method": "GetAllStates",
+    "RelativePath": "api/State",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.TalukaController",
+    "Method": "GetAllTalukas",
+    "RelativePath": "api/Taluka",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]
