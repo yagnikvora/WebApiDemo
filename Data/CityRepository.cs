@@ -37,10 +37,7 @@ namespace WebApiDemo.Data
                     StateID = Convert.ToInt32(reader["StateID"]),
                     StateName = reader["StateName"].ToString(),
                     CountryID = Convert.ToInt32(reader["CountryID"]),
-                    CountryName = reader["CountryName"].ToString(),
-                    UserID = Convert.ToInt32(reader["UserID"]),
-                    Created = Convert.ToDateTime(reader["CreatedAt"]),
-                    Modified = Convert.ToDateTime(reader["ModifiedAt"])
+                    CountryName = reader["CountryName"].ToString()
                 });
             }
             connection.Close();
@@ -73,10 +70,7 @@ namespace WebApiDemo.Data
                     StateID = Convert.ToInt32(reader["StateID"]),
                     StateName = reader["StateName"].ToString(),
                     CountryID = Convert.ToInt32(reader["CountryID"]),
-                    UserID = Convert.ToInt32(reader["UserID"]),
-                    CountryName = reader["CountryName"].ToString(),
-                    Created = Convert.ToDateTime(reader["CreatedAt"]),
-                    Modified = Convert.ToDateTime(reader["ModifiedAt"])
+                    CountryName = reader["CountryName"].ToString()
                 });
             }
             connection.Close();
@@ -113,7 +107,6 @@ namespace WebApiDemo.Data
             command.CommandText = "PR_LOC_City_Insert";
             command.Parameters.AddWithValue("CityName", city.CityName);
             command.Parameters.AddWithValue("TalukaID", city.TalukaID);
-            command.Parameters.AddWithValue("UserID", city.UserID);
             int rowsAffected = command.ExecuteNonQuery();
             isInserted = rowsAffected > 0;
             return isInserted;
@@ -134,7 +127,6 @@ namespace WebApiDemo.Data
             command.Parameters.AddWithValue("CityID", city.CityID);
             command.Parameters.AddWithValue("CityName", city.CityName);
             command.Parameters.AddWithValue("TalukaID", city.TalukaID);
-            command.Parameters.AddWithValue("UserID", city.UserID);
             int rowsAffected = command.ExecuteNonQuery();
             isUpdate = rowsAffected > 0;
             return isUpdate;

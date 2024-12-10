@@ -10,7 +10,7 @@ using WebApiDemo.Model;
 
 namespace WebApiDemo.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class CityController : ControllerBase
     {
@@ -49,7 +49,7 @@ namespace WebApiDemo.Controllers
         }
 
         [HttpPost]
-        public IActionResult InsertCity([FromBody][Bind("CityName", "TalukaID", "UserID")] CityInsertUpdate city)
+        public IActionResult InsertCity([FromBody][Bind()] CityInsertUpdate city)
         {
             if (city == null)
                 return BadRequest(new { Message = "City data is required." });

@@ -1,4 +1,6 @@
-﻿namespace WebApiDemo.Model
+﻿using System.Text.Json.Serialization;
+
+namespace WebApiDemo.Model
 {
     public class CityModel
     {
@@ -12,9 +14,14 @@
         public string StateName { get; set; }
         public int CountryID { get; set; }
         public string CountryName { get; set; }
-        public int UserID { get; set; }
-        public DateTime Created {  get; set; }  
-        public DateTime Modified { get; set; }
+
+    }
+
+    public class CityInsertUpdate
+    {
+        public int CityID { get; set; }
+        public string CityName { get; set; }
+        public int TalukaID { get; set; }
 
     }
 }
