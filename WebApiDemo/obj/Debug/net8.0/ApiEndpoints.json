@@ -1,0 +1,445 @@
+[
+  {
+    "ContainingType": "WebApiDemo.Controllers.CityController",
+    "Method": "DeleteCityByID",
+    "RelativePath": "api/City/DeleteCityByID/{CityID}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CityID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.CityController",
+    "Method": "GetAllCitis",
+    "RelativePath": "api/City/GetAllCitis",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.CityController",
+    "Method": "GetAllCityByID",
+    "RelativePath": "api/City/GetAllCityByID/{CityID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CityID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.CityController",
+    "Method": "InsertCity",
+    "RelativePath": "api/City/InsertCity",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "city",
+        "Type": "WebApiDemo.Model.CityInsertUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.CityController",
+    "Method": "UpdateCity",
+    "RelativePath": "api/City/UpdateCity/{CityID}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CityID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "city",
+        "Type": "WebApiDemo.Model.CityInsertUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.CountryController",
+    "Method": "DeleteCountryByID",
+    "RelativePath": "api/Country/DeleteCountryByID/{CountryID}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CountryID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.CountryController",
+    "Method": "GetAllCountries",
+    "RelativePath": "api/Country/GetAllCountries",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.CountryController",
+    "Method": "GetAllCountryByID",
+    "RelativePath": "api/Country/GetAllCountryByID/{CountryID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CountryID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.CountryController",
+    "Method": "InsertCountry",
+    "RelativePath": "api/Country/InsertCountry",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "country",
+        "Type": "WebApiDemo.Model.CountryModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.CountryController",
+    "Method": "UpdateCountry",
+    "RelativePath": "api/Country/UpdateCountry/{CountryID}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CountryID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "country",
+        "Type": "WebApiDemo.Model.CountryModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.DistrictController",
+    "Method": "DeleteDistrictByID",
+    "RelativePath": "api/District/DeleteDistrictByID/{DistrictID}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DistrictID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.DistrictController",
+    "Method": "DistrictsDropDownByStateID",
+    "RelativePath": "api/District/DistrictsDropDownByStateID/{StateID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "StateID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.DistrictController",
+    "Method": "GetAllDistrictByID",
+    "RelativePath": "api/District/GetAllDistrictByID/{DistrictID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DistrictID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.DistrictController",
+    "Method": "GetAllDistricts",
+    "RelativePath": "api/District/GetAllDistricts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.DistrictController",
+    "Method": "InsertDistrict",
+    "RelativePath": "api/District/InsertDistrict",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "district",
+        "Type": "WebApiDemo.Model.DistrictInsertUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.DistrictController",
+    "Method": "UpdateDistrict",
+    "RelativePath": "api/District/UpdateDistrict/{DistrictID}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DistrictID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "district",
+        "Type": "WebApiDemo.Model.DistrictInsertUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.StateController",
+    "Method": "DeleteStateByID",
+    "RelativePath": "api/State/DeleteStateByID/{StateID}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "StateID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.StateController",
+    "Method": "GetAllStateByID",
+    "RelativePath": "api/State/GetAllStateByID/{StateID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "StateID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.StateController",
+    "Method": "GetAllStates",
+    "RelativePath": "api/State/GetAllStates",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.StateController",
+    "Method": "InsertState",
+    "RelativePath": "api/State/InsertState",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "state",
+        "Type": "WebApiDemo.Model.StateInsertUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.StateController",
+    "Method": "StatesDropDownByCountryID",
+    "RelativePath": "api/State/StatesDropDownByCountryID/{CountryID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CountryID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.StateController",
+    "Method": "UpdateState",
+    "RelativePath": "api/State/UpdateState/{StateID}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "StateID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "state",
+        "Type": "WebApiDemo.Model.StateInsertUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.TalukaController",
+    "Method": "DeleteTalukaByID",
+    "RelativePath": "api/Taluka/DeleteTalukaByID/{TalukaID}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TalukaID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.TalukaController",
+    "Method": "GetAllTalukaByID",
+    "RelativePath": "api/Taluka/GetAllTalukaByID/{TalukaID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TalukaID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.TalukaController",
+    "Method": "GetAllTalukas",
+    "RelativePath": "api/Taluka/GetAllTalukas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.TalukaController",
+    "Method": "InsertTaluka",
+    "RelativePath": "api/Taluka/InsertTaluka",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taluka",
+        "Type": "WebApiDemo.Model.TalukaInsertUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.TalukaController",
+    "Method": "TalukasDropDownByDistrictID",
+    "RelativePath": "api/Taluka/TalukasDropDownByDistrictID/{DistrictID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DistrictID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.TalukaController",
+    "Method": "UpdateTaluka",
+    "RelativePath": "api/Taluka/UpdateTaluka/{TalukaID}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TalukaID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "taluka",
+        "Type": "WebApiDemo.Model.TalukaInsertUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
