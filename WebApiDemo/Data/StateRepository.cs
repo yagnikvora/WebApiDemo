@@ -124,7 +124,7 @@ namespace WebApiDemo.Data
         #region StatesDropDownByCountryID
         public List<StatesDropDownByCountryIDModel> StatesDropDownByCountryID(int CountryID)
         {
-            var districts = new List<StatesDropDownByCountryIDModel>();
+            var states = new List<StatesDropDownByCountryIDModel>();
             string connectionString = _configuration.GetConnectionString("myConnectionString");
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
@@ -135,14 +135,14 @@ namespace WebApiDemo.Data
             SqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                districts.Add(new StatesDropDownByCountryIDModel
+                states.Add(new StatesDropDownByCountryIDModel
                 {
                     StateID = Convert.ToInt32(reader["StateID"]),
                     StateName = reader["StateName"].ToString()
                 });
             }
             connection.Close();
-            return districts;
+            return states;
         }
         #endregion
     }
