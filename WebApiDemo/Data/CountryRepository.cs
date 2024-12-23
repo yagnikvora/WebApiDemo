@@ -12,7 +12,7 @@ namespace WebApiDemo.Data
             _configuration = configuration;
         }
 
-        #region GetAllCountrys
+        #region GetAllCountries
         public List<CountryModel> GetAllCountries()
         {
             var countries = new List<CountryModel>();
@@ -29,7 +29,7 @@ namespace WebApiDemo.Data
                 {
                     CountryID = Convert.ToInt32(reader["CountryID"]),
                     CountryName = reader["CountryName"].ToString(),
-
+                    CountryCode = reader["CountryCode"].ToString(),
                 });
             }
             connection.Close();
@@ -55,6 +55,7 @@ namespace WebApiDemo.Data
                 {
                     CountryID = Convert.ToInt32(reader["CountryID"]),
                     CountryName = reader["CountryName"].ToString(),
+                    CountryCode = reader["CountryCode"].ToString(),
                 });
             }
             connection.Close();
@@ -90,6 +91,7 @@ namespace WebApiDemo.Data
             command.CommandType = CommandType.StoredProcedure;
             command.CommandText = "PR_LOC_Country_Insert";
             command.Parameters.AddWithValue("CountryName", country.CountryName);
+            command.Parameters.AddWithValue("CountryCode", country.CountryCode);
             int rowsAffected = command.ExecuteNonQuery();
             isInserted = rowsAffected > 0;
             return isInserted;
@@ -109,9 +111,34 @@ namespace WebApiDemo.Data
             command.CommandText = "PR_LOC_Country_UpdateById";
             command.Parameters.AddWithValue("CountryID", country.CountryID);
             command.Parameters.AddWithValue("CountryName", country.CountryName);
+            command.Parameters.AddWithValue("CountryCode", country.CountryCode);
             int rowsAffected = command.ExecuteNonQuery();
             isUpdate = rowsAffected > 0;
             return isUpdate;
+        }
+        #endregion
+
+        #region CountryDropDown
+        public List<CountryDropDownModel> CountryDropDown()
+        {
+            var states = new List<CountryDropDownModel>();
+            string connectionString = _configuration.GetConnectionString("myConnectionString");
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+            SqlCommand command = connection.CreateCommand();
+            command.CommandType = CommandType.StoredProcedure;
+            command.CommandText = "PR_LOC_Country_DropDown";
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                states.Add(new CountryDropDownModel
+                {
+                    CountryID = Convert.ToInt32(reader["CountryID"]),
+                    CountryName = reader["CountryName"].ToString()
+                });
+            }
+            connection.Close();
+            return states;
         }
         #endregion
 

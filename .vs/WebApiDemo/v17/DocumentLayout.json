@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "Y:\\SEM-6\\Advance .NET\\Projects\\WebApiDemo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{498C5292-01EC-4B83-921B-0ED5D752C52E}|WebApiDemo\\WebApiDemo.csproj|y:\\sem-6\\advance .net\\projects\\webapidemo\\webapidemo\\controllers\\talukacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498C5292-01EC-4B83-921B-0ED5D752C52E}|WebApiDemo\\WebApiDemo.csproj|solutionrelative:webapidemo\\controllers\\talukacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{498C5292-01EC-4B83-921B-0ED5D752C52E}|WebApiDemo\\WebApiDemo.csproj|y:\\sem-6\\advance .net\\projects\\webapidemo\\webapidemo\\data\\cityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498C5292-01EC-4B83-921B-0ED5D752C52E}|WebApiDemo\\WebApiDemo.csproj|solutionrelative:webapidemo\\data\\cityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498C5292-01EC-4B83-921B-0ED5D752C52E}|WebApiDemo\\WebApiDemo.csproj|y:\\sem-6\\advance .net\\projects\\webapidemo\\webapidemo\\controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498C5292-01EC-4B83-921B-0ED5D752C52E}|WebApiDemo\\WebApiDemo.csproj|solutionrelative:webapidemo\\controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498C5292-01EC-4B83-921B-0ED5D752C52E}|WebApiDemo\\WebApiDemo.csproj|y:\\sem-6\\advance .net\\projects\\webapidemo\\webapidemo\\model\\statemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498C5292-01EC-4B83-921B-0ED5D752C52E}|WebApiDemo\\WebApiDemo.csproj|solutionrelative:webapidemo\\model\\statemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498C5292-01EC-4B83-921B-0ED5D752C52E}|WebApiDemo\\WebApiDemo.csproj|y:\\sem-6\\advance .net\\projects\\webapidemo\\webapidemo\\data\\staterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498C5292-01EC-4B83-921B-0ED5D752C52E}|WebApiDemo\\WebApiDemo.csproj|solutionrelative:webapidemo\\data\\staterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498C5292-01EC-4B83-921B-0ED5D752C52E}|WebApiDemo\\WebApiDemo.csproj|y:\\sem-6\\advance .net\\projects\\webapidemo\\webapidemo\\model\\citymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498C5292-01EC-4B83-921B-0ED5D752C52E}|WebApiDemo\\WebApiDemo.csproj|solutionrelative:webapidemo\\model\\citymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498C5292-01EC-4B83-921B-0ED5D752C52E}|WebApiDemo\\WebApiDemo.csproj|y:\\sem-6\\advance .net\\projects\\webapidemo\\webapidemo\\controllers\\countrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498C5292-01EC-4B83-921B-0ED5D752C52E}|WebApiDemo\\WebApiDemo.csproj|solutionrelative:webapidemo\\controllers\\countrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498C5292-01EC-4B83-921B-0ED5D752C52E}|WebApiDemo\\WebApiDemo.csproj|y:\\sem-6\\advance .net\\projects\\webapidemo\\webapidemo\\data\\countryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498C5292-01EC-4B83-921B-0ED5D752C52E}|WebApiDemo\\WebApiDemo.csproj|solutionrelative:webapidemo\\data\\countryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498C5292-01EC-4B83-921B-0ED5D752C52E}|WebApiDemo\\WebApiDemo.csproj|y:\\sem-6\\advance .net\\projects\\webapidemo\\webapidemo\\controllers\\statecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498C5292-01EC-4B83-921B-0ED5D752C52E}|WebApiDemo\\WebApiDemo.csproj|solutionrelative:webapidemo\\controllers\\statecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +42,104 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TalukaController.cs",
-              "DocumentMoniker": "Y:\\SEM-6\\Advance .NET\\Projects\\WebApiDemo\\WebApiDemo\\Controllers\\TalukaController.cs",
-              "RelativeDocumentMoniker": "WebApiDemo\\Controllers\\TalukaController.cs",
-              "ToolTip": "Y:\\SEM-6\\Advance .NET\\Projects\\WebApiDemo\\WebApiDemo\\Controllers\\TalukaController.cs",
-              "RelativeToolTip": "WebApiDemo\\Controllers\\TalukaController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCIAAABFAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CityController.cs",
+              "DocumentMoniker": "Y:\\SEM-6\\Advance .NET\\Projects\\WebApiDemo\\WebApiDemo\\Controllers\\CityController.cs",
+              "RelativeDocumentMoniker": "WebApiDemo\\Controllers\\CityController.cs",
+              "ToolTip": "Y:\\SEM-6\\Advance .NET\\Projects\\WebApiDemo\\WebApiDemo\\Controllers\\CityController.cs",
+              "RelativeToolTip": "WebApiDemo\\Controllers\\CityController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwBkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T12:38:43.401Z",
+              "WhenOpened": "2024-12-23T16:49:22.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CityRepository.cs",
+              "DocumentMoniker": "Y:\\SEM-6\\Advance .NET\\Projects\\WebApiDemo\\WebApiDemo\\Data\\CityRepository.cs",
+              "RelativeDocumentMoniker": "WebApiDemo\\Data\\CityRepository.cs",
+              "ToolTip": "Y:\\SEM-6\\Advance .NET\\Projects\\WebApiDemo\\WebApiDemo\\Data\\CityRepository.cs",
+              "RelativeToolTip": "WebApiDemo\\Data\\CityRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T16:47:42.11Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StateModel.cs",
+              "DocumentMoniker": "Y:\\SEM-6\\Advance .NET\\Projects\\WebApiDemo\\WebApiDemo\\Model\\StateModel.cs",
+              "RelativeDocumentMoniker": "WebApiDemo\\Model\\StateModel.cs",
+              "ToolTip": "Y:\\SEM-6\\Advance .NET\\Projects\\WebApiDemo\\WebApiDemo\\Model\\StateModel.cs",
+              "RelativeToolTip": "WebApiDemo\\Model\\StateModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T16:41:15.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StateRepository.cs",
+              "DocumentMoniker": "Y:\\SEM-6\\Advance .NET\\Projects\\WebApiDemo\\WebApiDemo\\Data\\StateRepository.cs",
+              "RelativeDocumentMoniker": "WebApiDemo\\Data\\StateRepository.cs",
+              "ToolTip": "Y:\\SEM-6\\Advance .NET\\Projects\\WebApiDemo\\WebApiDemo\\Data\\StateRepository.cs",
+              "RelativeToolTip": "WebApiDemo\\Data\\StateRepository.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwDwAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T16:40:53.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CityModel.cs",
+              "DocumentMoniker": "Y:\\SEM-6\\Advance .NET\\Projects\\WebApiDemo\\WebApiDemo\\Model\\CityModel.cs",
+              "RelativeDocumentMoniker": "WebApiDemo\\Model\\CityModel.cs",
+              "ToolTip": "Y:\\SEM-6\\Advance .NET\\Projects\\WebApiDemo\\WebApiDemo\\Model\\CityModel.cs",
+              "RelativeToolTip": "WebApiDemo\\Model\\CityModel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwAsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T15:43:45.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CountryRepository.cs",
+              "DocumentMoniker": "Y:\\SEM-6\\Advance .NET\\Projects\\WebApiDemo\\WebApiDemo\\Data\\CountryRepository.cs",
+              "RelativeDocumentMoniker": "WebApiDemo\\Data\\CountryRepository.cs",
+              "ToolTip": "Y:\\SEM-6\\Advance .NET\\Projects\\WebApiDemo\\WebApiDemo\\Data\\CountryRepository.cs",
+              "RelativeToolTip": "WebApiDemo\\Data\\CountryRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwHcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T15:37:57.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StateController.cs",
+              "DocumentMoniker": "Y:\\SEM-6\\Advance .NET\\Projects\\WebApiDemo\\WebApiDemo\\Controllers\\StateController.cs",
+              "RelativeDocumentMoniker": "WebApiDemo\\Controllers\\StateController.cs",
+              "ToolTip": "Y:\\SEM-6\\Advance .NET\\Projects\\WebApiDemo\\WebApiDemo\\Controllers\\StateController.cs",
+              "RelativeToolTip": "WebApiDemo\\Controllers\\StateController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T15:37:25.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CountryController.cs",
+              "DocumentMoniker": "Y:\\SEM-6\\Advance .NET\\Projects\\WebApiDemo\\WebApiDemo\\Controllers\\CountryController.cs",
+              "RelativeDocumentMoniker": "WebApiDemo\\Controllers\\CountryController.cs",
+              "ToolTip": "Y:\\SEM-6\\Advance .NET\\Projects\\WebApiDemo\\WebApiDemo\\Controllers\\CountryController.cs",
+              "RelativeToolTip": "WebApiDemo\\Controllers\\CountryController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwBwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T15:37:16.45Z"
             }
           ]
         }

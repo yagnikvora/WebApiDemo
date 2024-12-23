@@ -18,11 +18,17 @@
   {
     "ContainingType": "WebApiDemo.Controllers.CityController",
     "Method": "GetAllCitis",
-    "RelativePath": "api/City/GetAllCitis",
+    "RelativePath": "api/City/GetAllCitis/{StateID}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "StateID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -51,7 +57,7 @@
     "Parameters": [
       {
         "Name": "city",
-        "Type": "WebApiDemo.Model.CityInsertUpdate",
+        "Type": "WebApiDemo.Model.CityInsertUpdateModel",
         "IsRequired": true
       }
     ],
@@ -72,10 +78,20 @@
       },
       {
         "Name": "city",
-        "Type": "WebApiDemo.Model.CityInsertUpdate",
+        "Type": "WebApiDemo.Model.CityInsertUpdateModel",
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiDemo.Controllers.CountryController",
+    "Method": "CountryDropDown",
+    "RelativePath": "api/Country/CountryDropDown",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -158,101 +174,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApiDemo.Controllers.DistrictController",
-    "Method": "DeleteDistrictByID",
-    "RelativePath": "api/District/DeleteDistrictByID/{DistrictID}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "DistrictID",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApiDemo.Controllers.DistrictController",
-    "Method": "DistrictsDropDownByStateID",
-    "RelativePath": "api/District/DistrictsDropDownByStateID/{StateID}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "StateID",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApiDemo.Controllers.DistrictController",
-    "Method": "GetAllDistrictByID",
-    "RelativePath": "api/District/GetAllDistrictByID/{DistrictID}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "DistrictID",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApiDemo.Controllers.DistrictController",
-    "Method": "GetAllDistricts",
-    "RelativePath": "api/District/GetAllDistricts",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApiDemo.Controllers.DistrictController",
-    "Method": "InsertDistrict",
-    "RelativePath": "api/District/InsertDistrict",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "district",
-        "Type": "WebApiDemo.Model.DistrictInsertUpdate",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApiDemo.Controllers.DistrictController",
-    "Method": "UpdateDistrict",
-    "RelativePath": "api/District/UpdateDistrict/{DistrictID}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "DistrictID",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "district",
-        "Type": "WebApiDemo.Model.DistrictInsertUpdate",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "WebApiDemo.Controllers.StateController",
     "Method": "DeleteStateByID",
     "RelativePath": "api/State/DeleteStateByID/{StateID}",
@@ -304,7 +225,7 @@
     "Parameters": [
       {
         "Name": "state",
-        "Type": "WebApiDemo.Model.StateInsertUpdate",
+        "Type": "StateInsertUpdateModel",
         "IsRequired": true
       }
     ],
@@ -341,102 +262,7 @@
       },
       {
         "Name": "state",
-        "Type": "WebApiDemo.Model.StateInsertUpdate",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApiDemo.Controllers.TalukaController",
-    "Method": "DeleteTalukaByID",
-    "RelativePath": "api/Taluka/DeleteTalukaByID/{TalukaID}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "TalukaID",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApiDemo.Controllers.TalukaController",
-    "Method": "GetAllTalukaByID",
-    "RelativePath": "api/Taluka/GetAllTalukaByID/{TalukaID}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "TalukaID",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApiDemo.Controllers.TalukaController",
-    "Method": "GetAllTalukas",
-    "RelativePath": "api/Taluka/GetAllTalukas",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApiDemo.Controllers.TalukaController",
-    "Method": "InsertTaluka",
-    "RelativePath": "api/Taluka/InsertTaluka",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "taluka",
-        "Type": "WebApiDemo.Model.TalukaInsertUpdate",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApiDemo.Controllers.TalukaController",
-    "Method": "TalukasDropDownByDistrictID",
-    "RelativePath": "api/Taluka/TalukasDropDownByDistrictID/{DistrictID}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "DistrictID",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApiDemo.Controllers.TalukaController",
-    "Method": "UpdateTaluka",
-    "RelativePath": "api/Taluka/UpdateTaluka/{TalukaID}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "TalukaID",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "taluka",
-        "Type": "WebApiDemo.Model.TalukaInsertUpdate",
+        "Type": "StateInsertUpdateModel",
         "IsRequired": true
       }
     ],

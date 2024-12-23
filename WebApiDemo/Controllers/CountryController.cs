@@ -23,6 +23,12 @@ namespace WebApiDemo.Controllers
             var countryList = _countryRepository.GetAllCountries();
             return Ok(countryList);
         }
+        [HttpGet]
+        public IActionResult CountryDropDown()
+        {
+            var countryList = _countryRepository.CountryDropDown();
+            return Ok(countryList);
+        }
 
 
         [HttpGet("{CountryID}")]

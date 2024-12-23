@@ -50,7 +50,7 @@ namespace WebApiDemo.Controllers
         }
 
         [HttpPost]
-        public IActionResult InsertState([FromBody] StateInsertUpdate state)
+        public IActionResult InsertState([FromBody] StateInsertUpdateModel state)
         {
             if (state == null)
                 return BadRequest(new { Message = "State data is required." });
@@ -63,7 +63,7 @@ namespace WebApiDemo.Controllers
         }
 
         [HttpPut("{StateID}")]
-        public IActionResult UpdateState(int StateID, [FromBody] StateInsertUpdate state)
+        public IActionResult UpdateState(int StateID, [FromBody] StateInsertUpdateModel state)
         {
             if (state == null || StateID != state.StateID)
                 return BadRequest(new { Message = "Invalid state data or ID mismatch." });

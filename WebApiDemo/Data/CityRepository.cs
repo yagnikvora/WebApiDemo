@@ -14,7 +14,7 @@ namespace WebApiDemo.Data
         }
 
         #region GetAllCities
-        public List<CityModel> GetAllCitis()
+        public List<CityModel> GetAllCitis(int StateID)
         {
             var cities = new List<CityModel>();
             string connectionString = _configuration.GetConnectionString("myConnectionString");
@@ -22,7 +22,8 @@ namespace WebApiDemo.Data
             connection.Open();
             SqlCommand command = connection.CreateCommand();
             command.CommandType = CommandType.StoredProcedure;
-            command.CommandText = "PR_LOC_City_SelectTop";
+            command.CommandText = "PR_LOC_City_SelectAll_Condition";
+            command.Parameters.AddWithValue("StateID", StateID);
             SqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
@@ -30,14 +31,11 @@ namespace WebApiDemo.Data
                 {
                     CityID = Convert.ToInt32(reader["CityID"]),
                     CityName = reader["CityName"].ToString(),
-                    TalukaID = Convert.ToInt32(reader["TalukaID"]),
-                    TalukaName = reader["TalukaName"].ToString(),
-                    DistrictID = Convert.ToInt32(reader["DistrictID"]),
-                    DistrictName = reader["DistrictName"].ToString(),
                     StateID = Convert.ToInt32(reader["StateID"]),
                     StateName = reader["StateName"].ToString(),
                     CountryID = Convert.ToInt32(reader["CountryID"]),
-                    CountryName = reader["CountryName"].ToString()
+                    CountryName = reader["CountryName"].ToString(),
+                    CityCode = reader["CityCode"].ToString()
                 });
             }
             connection.Close();
@@ -63,14 +61,11 @@ namespace WebApiDemo.Data
                 {
                     CityID = Convert.ToInt32(reader["CityID"]),
                     CityName = reader["CityName"].ToString(),
-                    TalukaID = Convert.ToInt32(reader["TalukaID"]),
-                    TalukaName = reader["TalukaName"].ToString(),
-                    DistrictID = Convert.ToInt32(reader["DistrictID"]),
-                    DistrictName = reader["DistrictName"].ToString(),
                     StateID = Convert.ToInt32(reader["StateID"]),
                     StateName = reader["StateName"].ToString(),
                     CountryID = Convert.ToInt32(reader["CountryID"]),
-                    CountryName = reader["CountryName"].ToString()
+                    CountryName = reader["CountryName"].ToString(),
+                    CityCode = reader["CityCode"].ToString()
                 });
             }
             connection.Close();
@@ -96,7 +91,7 @@ namespace WebApiDemo.Data
         #endregion
 
         #region InsertCity
-        public bool InsertCity([Bind("CityName", "TalukaID", "UserID")] CityInsertUpdate city)
+        public bool InsertCity(CityInsertUpdateModel city)
         {
             bool isInserted = false;
             string connectionString = _configuration.GetConnectionString("myConnectionString");
@@ -106,7 +101,9 @@ namespace WebApiDemo.Data
             command.CommandType = CommandType.StoredProcedure;
             command.CommandText = "PR_LOC_City_Insert";
             command.Parameters.AddWithValue("CityName", city.CityName);
-            command.Parameters.AddWithValue("TalukaID", city.TalukaID);
+            command.Parameters.AddWithValue("CityCode", city.CityCode);
+            command.Parameters.AddWithValue("StateID", city.StateID);
+            command.Parameters.AddWithValue("CountryID", city.CountryID);
             int rowsAffected = command.ExecuteNonQuery();
             isInserted = rowsAffected > 0;
             return isInserted;
@@ -115,7 +112,7 @@ namespace WebApiDemo.Data
         #endregion
 
         #region UpdateCity
-        public bool UpdateCity(CityInsertUpdate city)
+        public bool UpdateCity(CityInsertUpdateModel city)
         {
             bool isUpdate = false;
             string connectionString = _configuration.GetConnectionString("myConnectionString");
@@ -126,7 +123,9 @@ namespace WebApiDemo.Data
             command.CommandText = "PR_LOC_City_UpdateById";
             command.Parameters.AddWithValue("CityID", city.CityID);
             command.Parameters.AddWithValue("CityName", city.CityName);
-            command.Parameters.AddWithValue("TalukaID", city.TalukaID);
+            command.Parameters.AddWithValue("CityCode", city.CityCode);
+            command.Parameters.AddWithValue("StateID", city.StateID);
+            command.Parameters.AddWithValue("CountryID", city.CountryID);
             int rowsAffected = command.ExecuteNonQuery();
             isUpdate = rowsAffected > 0;
             return isUpdate;

@@ -22,10 +22,10 @@ namespace WebApiDemo.Controllers
         }
 
 
-        [HttpGet]
-        public IActionResult GetAllCitis() 
+        [HttpGet("{StateID}")]
+        public IActionResult GetAllCitis(int StateID) 
         {
-            var cityList = _cityRepository.GetAllCitis();
+            var cityList = _cityRepository.GetAllCitis(StateID);
             return Ok(cityList);
         }
 
@@ -49,7 +49,7 @@ namespace WebApiDemo.Controllers
         }
 
         [HttpPost]
-        public IActionResult InsertCity([FromBody][Bind()] CityInsertUpdate city)
+        public IActionResult InsertCity([FromBody][Bind()] CityInsertUpdateModel city)
         {
             if (city == null)
                 return BadRequest(new { Message = "City data is required." });
@@ -62,7 +62,7 @@ namespace WebApiDemo.Controllers
         }
 
         [HttpPut("{CityID}")]
-        public IActionResult UpdateCity(int CityID, [FromBody] CityInsertUpdate city)
+        public IActionResult UpdateCity(int CityID, [FromBody] CityInsertUpdateModel city)
         {
             if (city == null || CityID != city.CityID)
                 return BadRequest(new { Message = "Invalid city data or ID mismatch." });

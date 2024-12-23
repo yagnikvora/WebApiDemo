@@ -1,6 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
 using System.Data;
 using WebApiDemo.Model;
+using static StateInsertUpdateModel;
 
 namespace WebApiDemo.Data
 {
@@ -29,8 +30,9 @@ namespace WebApiDemo.Data
                 {
                     StateID = Convert.ToInt32(reader["StateID"]),
                     StateName = reader["StateName"].ToString(),
-                    CountryID = Convert.ToInt32(reader["CountryID"]),
+                    StateCode = reader["StateCode"].ToString(),
                     CountryName = reader["CountryName"].ToString(),
+                    CityCount = Convert.ToInt32(reader["CityCount"])
 
                 });
             }
@@ -56,9 +58,10 @@ namespace WebApiDemo.Data
                 state.Add(new StateModel
                 {
                     StateID = Convert.ToInt32(reader["StateID"]),
-                    StateName = reader["StateName"].ToString(),
                     CountryID = Convert.ToInt32(reader["CountryID"]),
-                    CountryName = reader["CountryName"].ToString(),
+                    StateName = reader["StateName"].ToString(),
+                    StateCode = reader["StateCode"].ToString(),
+                    CountryName = reader["CountryName"].ToString()
                 });
             }
             connection.Close();
@@ -84,7 +87,7 @@ namespace WebApiDemo.Data
         #endregion
 
         #region InsertState
-        public bool InsertState(StateInsertUpdate state)
+        public bool InsertState(StateInsertUpdateModel state)
         {
             bool isInserted = false;
             string connectionString = _configuration.GetConnectionString("myConnectionString");
@@ -94,6 +97,7 @@ namespace WebApiDemo.Data
             command.CommandType = CommandType.StoredProcedure;
             command.CommandText = "PR_LOC_State_Insert";
             command.Parameters.AddWithValue("StateName", state.StateName);
+            command.Parameters.AddWithValue("StateCode", state.StateCode);
             command.Parameters.AddWithValue("CountryID", state.CountryID);
             int rowsAffected = command.ExecuteNonQuery();
             isInserted = rowsAffected > 0;
@@ -103,7 +107,7 @@ namespace WebApiDemo.Data
         #endregion
 
         #region UpdateState
-        public bool UpdateState(StateInsertUpdate state)
+        public bool UpdateState(StateInsertUpdateModel state)
         {
             bool isUpdate = false;
             string connectionString = _configuration.GetConnectionString("myConnectionString");
@@ -114,6 +118,7 @@ namespace WebApiDemo.Data
             command.CommandText = "PR_LOC_State_UpdateById";
             command.Parameters.AddWithValue("StateID", state.StateID);
             command.Parameters.AddWithValue("StateName", state.StateName);
+            command.Parameters.AddWithValue("StateCode", state.StateCode);
             command.Parameters.AddWithValue("CountryID", state.CountryID);
             int rowsAffected = command.ExecuteNonQuery();
             isUpdate = rowsAffected > 0;
@@ -122,9 +127,9 @@ namespace WebApiDemo.Data
         #endregion
 
         #region StatesDropDownByCountryID
-        public List<StatesDropDownByCountryIDModel> StatesDropDownByCountryID(int CountryID)
+        public List<StateDropDownModel> StatesDropDownByCountryID(int CountryID)
         {
-            var states = new List<StatesDropDownByCountryIDModel>();
+            var states = new List<StateDropDownModel>();
             string connectionString = _configuration.GetConnectionString("myConnectionString");
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
@@ -135,7 +140,7 @@ namespace WebApiDemo.Data
             SqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                states.Add(new StatesDropDownByCountryIDModel
+                states.Add(new StateDropDownModel
                 {
                     StateID = Convert.ToInt32(reader["StateID"]),
                     StateName = reader["StateName"].ToString()
